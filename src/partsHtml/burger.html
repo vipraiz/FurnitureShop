@@ -1,0 +1,24 @@
+<style>
+  .burger {
+    --burger-width: 40px;
+    --burger-height: 20px;
+    --burger-line-height: 2px;
+    --burger-color: #{$white};
+
+    @include burger;
+  }
+</style>
+
+<body>
+  <button class="burger btn-reset" aria-label="menu-burger">
+    <span class="burger__line"></span>
+  </button>
+</body>
+
+<script>
+  const burger = document.querySelector('.burger');
+
+  burger.addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('burger_active');
+  });
+</script>
