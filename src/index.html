@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#111111" />
-    <title>New site</title>
-    <link rel="stylesheet" href="css/global.css" />
+    <title>Funiro</title>
     <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -16,7 +16,635 @@
     <div class="site-container">
       @include('partials/header.html')
       <main class="main">
-        <!-- @include('partials/NAME.html') -->
+        <section class="main-slider">
+          <div class="container main-slider__container">
+            <div class="main-slider__content content-main">
+              <h1 class="content-main__title">
+                High-Quality Furniture Just For You
+              </h1>
+              <div class="content-main__text">
+                Our furniture is made from selected and best quality materials
+                that are suitable for your dream home
+              </div>
+              <a
+                href="#"
+                data-da=".main-slider__container, 991.98"
+                class="content-main__link btn"
+                >Shop Now</a
+              >
+            </div>
+            <div class="main-slider__slider slider-main">
+              <div class="slider-main__controls controls-slider-main">
+                <div class="controls-slider-main__dots"></div>
+                <div class="controls-slider-main__arrows slider-arrows">
+                  <button class="slider-arrow slider-arrow_prev btn-reset">
+                    <svg aria-hidden="true">
+                      <use href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                  <button class="slider-arrow slider-arrow_next btn-reset">
+                    <svg aria-hidden="true">
+                      <use href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-main__body">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-main__slide">
+                    <div class="slider-main__image _ibg">
+                      <img src="img/main-slider/01.jpg" alt="Bohauss" />
+                    </div>
+                    <a
+                      data-swiper-parallax-opacity="0"
+                      data-swiper-parallax-x="-100%"
+                      href="#"
+                      class="slider-main__content"
+                    >
+                      <div class="slider-main__title">Bohauss</div>
+                      <div class="slider-main__text">
+                        Luxury big sofa 2-seat
+                      </div>
+                      <div class="slider-main__price">Rp 17.000.000</div>
+                      <div class="svg-wrapper">
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#arrow-link"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider-main__slide">
+                    <div class="slider-main__image _ibg">
+                      <img src="img/main-slider/02.jpg" alt="Bohauss" />
+                    </div>
+                    <a
+                      data-swiper-parallax-opacity="0"
+                      data-swiper-parallax-x="-100%"
+                      href="#"
+                      class="slider-main__content"
+                    >
+                      <div class="slider-main__title">Bohauss</div>
+                      <div class="slider-main__text">
+                        Luxury big sofa 2-seat
+                      </div>
+                      <div class="slider-main__price">Rp 17.000.000</div>
+                      <div class="svg-wrapper">
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#arrow-link"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider-main__slide">
+                    <div class="slider-main__image _ibg">
+                      <img src="img/main-slider/03.jpg" alt="Bohauss" />
+                    </div>
+                    <a
+                      data-swiper-parallax-opacity="0"
+                      data-swiper-parallax-x="-100%"
+                      href="#"
+                      class="slider-main__content"
+                    >
+                      <div class="slider-main__title">Bohauss</div>
+                      <div class="slider-main__text">
+                        Luxury big sofa 2-seat
+                      </div>
+                      <div class="slider-main__price">Rp 17.000.000</div>
+                      <div class="svg-wrapper">
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#arrow-link"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container advantages__container">
+            <div class="advantages__item">
+              <div
+                class="advantages__icon"
+                style="background-image: url(img/advantages/01.svg)"
+              ></div>
+              <h4 class="advantages__title">High Quality</h4>
+              <div class="advantages__text">Crafted from top materials</div>
+            </div>
+            <div class="advantages__item">
+              <div
+                class="advantages__icon"
+                style="background-image: url(img/advantages/02.svg)"
+              ></div>
+              <h4 class="advantages__title">Warrany Protection</h4>
+              <div class="advantages__text">Over 2 years</div>
+            </div>
+            <div class="advantages__item">
+              <div
+                class="advantages__icon"
+                style="background-image: url(img/advantages/03.svg)"
+              ></div>
+              <h4 class="advantages__title">Free Shipping</h4>
+              <div class="advantages__text">Order over 150 $</div>
+            </div>
+            <div class="advantages__item">
+              <div
+                class="advantages__icon"
+                style="background-image: url(img/advantages/04.svg)"
+              ></div>
+              <h4 class="advantages__title">24 / 7 Support</h4>
+              <div class="advantages__text">Dedicated support</div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="container products__container">
+            <h2 class="products__title title">Our Products</h2>
+            <div class="products__items">
+              <!-- <article data-pid="1" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_new">
+                    New
+                  </div>
+                  <div class="item-product__label item-product__label_sale">
+                    -30%
+                  </div>
+                </div>
+                <a href="#" class="item-product__image _ibg">
+                  <img src="img/products/01.jpg" alt="Syltherine" />
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Syltherine</h5>
+                    <div class="item-product__text">Stylish cafe chair</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">Rp 2.500.000</div>
+                    <div class="item-product__price item-product__price_old">
+                      Rp 3.500.000
+                    </div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <button
+                        class="btn-reset actions-product__btn btn btn_white"
+                      >
+                        Add to cart
+                      </button>
+                      <a
+                        href="#"
+                        class="
+                          actions-product__link actions-product__link_share
+                        "
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#share"></use>
+                        </svg>
+                        Share
+                      </a>
+                      <a
+                        href="#"
+                        class="actions-product__link actions-product__link_like"
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#favorite"></use>
+                        </svg>
+                        Like
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-pid="2" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_sale">
+                    -30%
+                  </div>
+                </div>
+                <a href="#" class="item-product__image _ibg">
+                  <img src="img/products/02.jpg" alt="Leviosa" />
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Leviosa</h5>
+                    <div class="item-product__text">Stylish cafe chair</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">Rp 2.500.000</div>
+                    <div class="item-product__price item-product__price_old">
+                      Rp 3.500.000
+                    </div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <button
+                        class="btn-reset actions-product__btn btn btn_white"
+                      >
+                        Add to cart
+                      </button>
+                      <a
+                        href="#"
+                        class="
+                          actions-product__link actions-product__link_share
+                        "
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#share"></use>
+                        </svg>
+                        Share
+                      </a>
+                      <a
+                        href="#"
+                        class="actions-product__link actions-product__link_like"
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#favorite"></use>
+                        </svg>
+                        Like
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-pid="3" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_sale">
+                    -50%
+                  </div>
+                </div>
+                <a href="#" class="item-product__image _ibg">
+                  <img src="img/products/03.jpg" alt="Lolito" />
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Lolito</h5>
+                    <div class="item-product__text">Luxury big sofa</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">Rp 7.000.000</div>
+                    <div class="item-product__price item-product__price_old">
+                      Rp 14.000.000
+                    </div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <button
+                        class="btn-reset actions-product__btn btn btn_white"
+                      >
+                        Add to cart
+                      </button>
+                      <a
+                        href="#"
+                        class="
+                          actions-product__link actions-product__link_share
+                        "
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#share"></use>
+                        </svg>
+                        Share
+                      </a>
+                      <a
+                        href="#"
+                        class="actions-product__link actions-product__link_like"
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#favorite"></use>
+                        </svg>
+                        Like
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-pid="4" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_new">
+                    New
+                  </div>
+                </div>
+                <a href="#" class="item-product__image _ibg">
+                  <img src="img/products/04.jpg" alt="Respira" />
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Respira</h5>
+                    <div class="item-product__text">Minimalist fan</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">Rp 500.000</div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <button
+                        class="btn-reset actions-product__btn btn btn_white"
+                      >
+                        Add to cart
+                      </button>
+                      <a
+                        href="#"
+                        class="
+                          actions-product__link actions-product__link_share
+                        "
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#share"></use>
+                        </svg>
+                        Share
+                      </a>
+                      <a
+                        href="#"
+                        class="actions-product__link actions-product__link_like"
+                      >
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#favorite"></use>
+                        </svg>
+                        Like
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article> -->
+            </div>
+            <div class="products__footer">
+              <button class="btn btn_white btn-reset products__more">
+                Show more
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="rooms">
+          <div class="container rooms__container">
+            <div class="rooms__content">
+              <h2 class="rooms__title title">
+                50+ Beautiful rooms inspiration
+              </h2>
+              <div class="rooms__text">
+                Our designer already made a lot of beautiful prototipe of rooms
+                that inspire you
+              </div>
+              <a href="#" class="btn rooms__btn">Explore More</a>
+            </div>
+            <div class="rooms__slider slider-rooms">
+              <div class="slider-rooms__body">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-rooms__slide">
+                    <div class="slider-rooms__image _ibg">
+                      <img src="img/rooms/01.jpg" alt="Bed Room" />
+                    </div>
+                    <a
+                      href="#"
+                      data-swiper-parallax-opacity="0"
+                      data-swiper-parallax-scale="0.25"
+                      class="slider-rooms__content"
+                    >
+                      <div class="slider-rooms__label label-slider">
+                        <div class="label-slider__number">01</div>
+                        <div class="label-slider__line"></div>
+                        <div class="label-slider__text">Bed Room</div>
+                      </div>
+                      <div class="slider-rooms__title">Inner Peace</div>
+                      <div class="slider-rooms__arrow">
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#arrow-link"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider-rooms__slide">
+                    <div class="slider-rooms__image _ibg">
+                      <img src="img/rooms/02.jpg" alt="Bed Room" />
+                    </div>
+                    <a
+                      href="#"
+                      data-swiper-parallax-opacity="0"
+                      data-swiper-parallax-scale="0.25"
+                      class="slider-rooms__content"
+                    >
+                      <div class="slider-rooms__label label-slider">
+                        <div class="label-slider__number">02</div>
+                        <div class="label-slider__line"></div>
+                        <div class="label-slider__text">Bed Room</div>
+                      </div>
+                      <div class="slider-rooms__title">Inner Peace</div>
+                      <div class="slider-rooms__arrow">
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#arrow-link"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider-rooms__slide">
+                    <div class="slider-rooms__image _ibg">
+                      <img src="img/rooms/03.jpg" alt="Bed Room" />
+                    </div>
+                    <a
+                      href="#"
+                      data-swiper-parallax-opacity="0"
+                      data-swiper-parallax-scale="0.25"
+                      class="slider-rooms__content"
+                    >
+                      <div class="slider-rooms__label label-slider">
+                        <div class="label-slider__number">03</div>
+                        <div class="label-slider__line"></div>
+                        <div class="label-slider__text">Bed Room</div>
+                      </div>
+                      <div class="slider-rooms__title">Inner Peace</div>
+                      <div class="slider-rooms__arrow">
+                        <svg aria-hidden="true">
+                          <use href="img/sprite.svg#arrow-link"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-rooms__arrows slider-arrows">
+                <button
+                  class="
+                    slider-arrow slider-arrow_secondary slider-arrow_prev
+                    btn-reset
+                  "
+                >
+                  <svg aria-hidden="true">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </button>
+                <button
+                  class="
+                    slider-arrow slider-arrow_secondary slider-arrow_next
+                    btn-reset
+                  "
+                >
+                  <svg aria-hidden="true">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="slider-rooms__dots"></div>
+            </div>
+          </div>
+        </section>
+        <section class="tips">
+          <div class="container tips__container">
+            <h2 class="title tips__title">Tips & Tricks</h2>
+            <div class="tips__slider slider-tips">
+              <div class="slider-tips__body">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-tips__slide">
+                    <a href="#" class="slider-tips__image _ibg">
+                      <img
+                        src="img/tips/01.jpg"
+                        alt="How to create a living room to love"
+                      />
+                    </a>
+                    <div class="slider-tips__content">
+                      <a href="#" class="slider-tips__title"
+                        >How to create a living room to love</a
+                      >
+                      <div class="slider-tips__date">20 jan 2020</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider-tips__slide">
+                    <a href="#" class="slider-tips__image _ibg">
+                      <img
+                        src="img/tips/02.jpg"
+                        alt="Solution for clean look working
+                        space"
+                      />
+                    </a>
+                    <div class="slider-tips__content">
+                      <a href="#" class="slider-tips__title"
+                        >Solution for clean look working space</a
+                      >
+                      <div class="slider-tips__date">10 jan 2020</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider-tips__slide">
+                    <a href="#" class="slider-tips__image _ibg">
+                      <img
+                        src="img/tips/03.jpg"
+                        alt="Make your cooking activity 
+                        more fun with good setup"
+                      />
+                    </a>
+                    <div class="slider-tips__content">
+                      <a href="#" class="slider-tips__title"
+                        >Make your cooking activity more fun with good setup</a
+                      >
+                      <div class="slider-tips__date">20 jan 2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-tips__dots"></div>
+              <div class="slider-tips__arrows slider-arrows">
+                <button
+                  class="
+                    slider-arrow slider-arrow_secondary slider-arrow_prev
+                    btn-reset
+                  "
+                >
+                  <svg aria-hidden="true">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </button>
+                <button
+                  class="
+                    slider-arrow slider-arrow_secondary slider-arrow_next
+                    btn-reset
+                  "
+                >
+                  <svg aria-hidden="true">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="furniture">
+          <div class="furniture__container">
+            <div class="furniture__label">Share your setup with</div>
+            <h2 class="furniture__title title">#FuniroFurniture</h2>
+            <div class="furniture__body" data-speed="1.5">
+              <div class="furniture__items">
+                <div class="furniture__column">
+                  <div
+                    class="furniture__row row-furniture row-furniture_left-top"
+                  >
+                    <a href="img/furniture/09.jpg" class="row-furniture__item">
+                      <img src="img/furniture/09.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/01.jpg" class="row-furniture__item">
+                      <img src="img/furniture/01.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/02.jpg" class="row-furniture__item">
+                      <img src="img/furniture/02.jpg" alt="Image"
+                    /></a>
+                  </div>
+                  <div
+                    class="
+                      furniture__row
+                      row-furniture row-furniture_left-bottom
+                    "
+                  >
+                    <a href="img/furniture/04.jpg" class="row-furniture__item">
+                      <img src="img/furniture/04.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/06.jpg" class="row-furniture__item">
+                      <img src="img/furniture/06.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/07.jpg" class="row-furniture__item">
+                      <img src="img/furniture/07.jpg" alt="Image"
+                    /></a>
+                  </div>
+                </div>
+                <div class="furniture__column">
+                  <div
+                    class="furniture__row row-furniture row-furniture_center"
+                  >
+                    <a href="img/furniture/03.jpg" class="row-furniture__item">
+                      <img src="img/furniture/03.jpg" alt="Image"
+                    /></a>
+                  </div>
+                </div>
+                <div class="furniture__column">
+                  <div
+                    class="furniture__row row-furniture row-furniture_right-top"
+                  >
+                    <a href="img/furniture/04.jpg" class="row-furniture__item">
+                      <img src="img/furniture/04.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/05.jpg" class="row-furniture__item">
+                      <img src="img/furniture/05.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/01.jpg" class="row-furniture__item">
+                      <img src="img/furniture/01.jpg" alt="Image"
+                    /></a>
+                  </div>
+                  <div
+                    class="
+                      furniture__row
+                      row-furniture row-furniture_right-bottom
+                    "
+                  >
+                    <a href="img/furniture/08.jpg" class="row-furniture__item">
+                      <img src="img/furniture/08.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/09.jpg" class="row-furniture__item">
+                      <img src="img/furniture/09.jpg" alt="Image"
+                    /></a>
+                    <a href="img/furniture/06.jpg" class="row-furniture__item">
+                      <img src="img/furniture/06.jpg" alt="Image"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       @include('partials/footer.html')
     </div>

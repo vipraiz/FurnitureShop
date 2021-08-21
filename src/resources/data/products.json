@@ -1,71 +1,153 @@
 {
-	"products": [
-		{
-			"id": 5,
-			"url": "#",
-			"title": "Grifo",
-			"text": "Night lamp",
-			"labels": "",
-			"image": "05.jpg",
-			"price": "1.500.000",
-			"priceOld": "",
-			"shareUrl": "",
-			"likeUrl": ""
-		},
-		{
-			"id": 6,
-			"url": "#",
-			"title": "Muggo",
-			"text": "Small mug",
-			"labels": [
-				{
-					"type": "sale",
-					"value": "-50%"
-				},
-				{
-					"type": "new",
-					"value": "New"
-				}
-			],
-			"image": "06.jpg",
-			"price": "1.500.000",
-			"priceOld": "2.500.000",
-			"shareUrl": "",
-			"likeUrl": ""
-		},
-		{
-			"id": 7,
-			"url": "#",
-			"title": "Pingky",
-			"text": "Cute bed set",
-			"labels": [
-				{
-					"type": "sale",
-					"value": "-50%"
-				}
-			],
-			"image": "07.jpg",
-			"price": "7.000.000",
-			"priceOld": "14.500.000",
-			"shareUrl": "",
-			"likeUrl": ""
-		},
-		{
-			"id": 8,
-			"url": "#",
-			"title": "Potty",
-			"text": "Minimalist flower pot",
-			"labels": [
-				{
-					"type": "new",
-					"value": "New"
-				}
-			],
-			"image": "08.jpg",
-			"price": "500.000",
-			"priceOld": "",
-			"shareUrl": "",
-			"likeUrl": ""
-		}
-	]
+  "settings": {
+    "imagesLocation": "img/products/"
+  },
+  "products": [
+    {
+      "id": 1,
+      "url": "#",
+      "title": "Syltherine",
+      "text": "Stylish cafe chair",
+      "labels": [
+        {
+          "type": "new",
+          "value": "New"
+        },
+        {
+          "type": "sale",
+          "value": "-30%"
+        }
+      ],
+      "image": "01.jpg",
+      "currency": "Rp",
+      "price": "2.500.000",
+      "priceOld": "3.500.000",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 2,
+      "url": "#",
+      "title": "Leviosa",
+      "text": "Stylish cafe chair",
+      "labels": [
+        {
+          "type": "sale",
+          "value": "-30%"
+        }
+      ],
+      "image": "02.jpg",
+      "currency": "Rp",
+      "price": "2.500.000",
+      "priceOld": "3.500.000",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 3,
+      "url": "#",
+      "title": "Lolito",
+      "text": "Luxury big sofa",
+      "labels": [
+        {
+          "type": "sale",
+          "value": "-50%"
+        }
+      ],
+      "image": "03.jpg",
+      "currency": "Rp",
+      "price": "7.000.000",
+      "priceOld": "14.000.000",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 4,
+      "url": "#",
+      "title": "Respira",
+      "text": "Minimalist fan",
+      "labels": [
+        {
+          "type": "new",
+          "value": "New"
+        }
+      ],
+      "image": "04.jpg",
+      "currency": "Rp",
+      "price": "500.000",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 5,
+      "url": "#",
+      "title": "Grifo",
+      "text": "Night lamp",
+      "labels": "",
+      "image": "05.jpg",
+      "currency": "Rp",
+      "price": "1.500.000",
+      "priceOld": "",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 6,
+      "url": "#",
+      "title": "Muggo",
+      "text": "Small mug",
+      "labels": [
+        {
+          "type": "new",
+          "value": "New"
+        },
+        {
+          "type": "sale",
+          "value": "-50%"
+        }
+      ],
+      "image": "06.jpg",
+      "currency": "Rp",
+      "price": "1.500.000",
+      "priceOld": "2.500.000",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 7,
+      "url": "#",
+      "title": "Pingky",
+      "text": "Cute bed set",
+      "labels": [
+        {
+          "type": "sale",
+          "value": "-50%"
+        }
+      ],
+      "image": "07.jpg",
+      "currency": "Rp",
+      "price": "7.000.000",
+      "priceOld": "14.500.000",
+      "shareUrl": "",
+      "likeUrl": ""
+    },
+    {
+      "id": 8,
+      "url": "#",
+      "title": "Potty",
+      "text": "Minimalist flower pot",
+      "labels": [
+        {
+          "type": "new",
+          "value": "New"
+        }
+      ],
+      "image": "08.jpg",
+      "currency": "Rp",
+      "price": "500.000",
+      "priceOld": "",
+      "shareUrl": "",
+      "likeUrl": ""
+    }
+  ]
 }

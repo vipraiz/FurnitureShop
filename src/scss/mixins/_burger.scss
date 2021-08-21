@@ -1,12 +1,21 @@
 @mixin burger {
   position: relative;
-  width: var(--burger-width);
+  display: block;
+  flex: 0 0 var(--burger-width);
   height: var(--burger-height);
   color: var(--burger-color);
 
+  @media (any-hover: hover) {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--burger-color-hover);
+    }
+  }
+
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 100%;
@@ -20,7 +29,7 @@
   }
 
   &::after {
-    bottom: 0;
+    top: calc(100% - var(--burger-line-height));
   }
 
   &__line {

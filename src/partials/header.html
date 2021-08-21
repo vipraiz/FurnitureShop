@@ -1,3 +1,120 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="header__wrapper">
+    <div class="container header__container">
+      <div class="header__main">
+        <a href="#" class="header__logo">Funiro.</a>
+        <nav class="nav">
+          <ul data-spoilers="768,max" class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Products</a>
+              <button
+                class="btn-reset nav__arrow"
+                data-spoiler
+                aria-expanded="false"
+                aria-label="spoiler"
+              >
+                <svg aria-hidden="true">
+                  <use href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+              <ul class="list-reset nav__sub-list sub-list" aria-hidden="true">
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Product #1</a>
+                </li>
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Product #2</a>
+                </li>
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Product #3</a>
+                </li>
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Product #4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Rooms</a>
+              <button
+                class="btn-reset nav__arrow"
+                data-spoiler
+                aria-label="spoiler"
+              >
+                <svg aria-hidden="true">
+                  <use href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+              <ul class="list-reset nav__sub-list sub-list">
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Room #1</a>
+                </li>
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Room #2</a>
+                </li>
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Room #3</a>
+                </li>
+                <li class="sub-list__item">
+                  <a href="#" class="sub-list__link">Room #4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Inspirations</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__search">
+        <div class="search-form">
+          <button class="btn-reset search-form__icon">
+            <svg aria-hidden="true">
+              <use href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <form action="#" class="search-form__item">
+            <a href="#" class="search-form__link">
+              <svg aria-hidden="true">
+                <use href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
+            <input
+              autocomplete="off"
+              name="form[]"
+              placeholder="Search for minimalist chair"
+              type="text"
+              class="search-form__input"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="header__actions actions-header">
+        <a href="#" class="actions-header__item actions-header__item_favorites">
+          <svg aria-hidden="true">
+            <use href="img/sprite.svg#favorite"></use></svg
+        ></a>
+        <div class="actions-header__item cart-header">
+          <button class="cart-header__icon btn-reset" disabled="disabled">
+            <svg aria-hidden="true">
+              <use href="img/sprite.svg#cart"></use>
+            </svg>
+          </button>
+          <div class="cart-header__body">
+            <ul class="cart-header__list list-reset cart-list"></ul>
+            <div class="cart-header__footer">
+              <div class="cart-header__total-price">
+                Total price: <span></span>
+              </div>
+              <a href="#" class="btn cart-header__buy">Buy</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="actions-header__item actions-header__item_user _ibg">
+          <img src="img/avatar.jpg" alt="avatar" />
+        </a>
+      </div>
+      <button class="burger btn-reset" aria-label="menu-burger">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
 </header>
