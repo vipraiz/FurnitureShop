@@ -5,11 +5,6 @@
  * @returns {number}
  */
 
-const observer = lozad('.lozad', {
-  rootMargin: '50% 0px',
-});
-observer.observe();
-
 document.querySelector('.burger').addEventListener('click', (e) => {
   e.currentTarget.classList.toggle('burger_active');
   document.body.classList.toggle('_lock');

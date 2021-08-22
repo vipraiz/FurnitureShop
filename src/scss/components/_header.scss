@@ -347,6 +347,8 @@
   }
 
   &__link {
+    position: relative;
+    z-index: 5;
     display: flex;
     flex: 0 0 45px;
     align-items: center;

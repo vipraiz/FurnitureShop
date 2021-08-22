@@ -10,14 +10,14 @@
               <button
                 class="btn-reset nav__arrow"
                 data-spoiler
-                aria-expanded="false"
+                data-tab-spoiler
                 aria-label="spoiler"
               >
                 <svg aria-hidden="true">
                   <use href="img/sprite.svg#arrow-down"></use>
                 </svg>
               </button>
-              <ul class="list-reset nav__sub-list sub-list" aria-hidden="true">
+              <ul class="list-reset nav__sub-list sub-list">
                 <li class="sub-list__item">
                   <a href="#" class="sub-list__link">Product #1</a>
                 </li>
@@ -37,6 +37,7 @@
               <button
                 class="btn-reset nav__arrow"
                 data-spoiler
+                data-tab-spoiler
                 aria-label="spoiler"
               >
                 <svg aria-hidden="true">
@@ -71,7 +72,7 @@
               <use href="img/sprite.svg#search"></use>
             </svg>
           </button>
-          <form action="#" class="search-form__item">
+          <form class="search-form__item">
             <a href="#" class="search-form__link">
               <svg aria-hidden="true">
                 <use href="img/sprite.svg#search"></use>

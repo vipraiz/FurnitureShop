@@ -6,7 +6,7 @@ window.onload = () => {
   function documentActions(e) {
     const targetElement = e.target;
 
-    if (window.innerWidth > 768 && isMobile.any()) {
+    if (window.innerWidth > 768) {
       if (targetElement.classList.contains('nav__arrow')) {
         targetElement.closest('.nav__item').classList.toggle('_hover');
       } else if (!targetElement.closest('.nav__item')) {

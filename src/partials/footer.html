@@ -98,20 +98,22 @@
     </div>
     <div class="footer__subscribe subscribe">
       <div class="subscribe__title footer-title">Stay Updated</div>
-      <form action="#" class="subscribe__form">
-        <input
-          autocomplete="off"
-          type="text"
-          name="form[]"
-          data-error="Ошибка"
-          placeholder="Enter your email"
-          class="subscribe__input"
-        />
-        <button class="btn-reset subscribe__btn">
-          <svg aria-hidden="true">
-            <use href="img/sprite.svg#send"></use>
-          </svg>
-        </button>
+      <form class="subscribe__form">
+        <label class="subscribe__label">
+          <input
+            autocomplete="off"
+            type="email"
+            name="email"
+            data-validate-field="email"
+            placeholder="Enter your email"
+            class="subscribe__input"
+          />
+          <button class="btn-reset subscribe__btn">
+            <svg aria-hidden="true">
+              <use href="img/sprite.svg#send"></use>
+            </svg>
+          </button>
+        </label>
       </form>
     </div>
   </div>

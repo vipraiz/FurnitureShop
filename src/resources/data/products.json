@@ -22,8 +22,8 @@
       "currency": "Rp",
       "price": "2.500.000",
       "priceOld": "3.500.000",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 2,
@@ -40,8 +40,8 @@
       "currency": "Rp",
       "price": "2.500.000",
       "priceOld": "3.500.000",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 3,
@@ -58,8 +58,8 @@
       "currency": "Rp",
       "price": "7.000.000",
       "priceOld": "14.000.000",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 4,
@@ -75,8 +75,8 @@
       "image": "04.jpg",
       "currency": "Rp",
       "price": "500.000",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 5,
@@ -88,8 +88,8 @@
       "currency": "Rp",
       "price": "1.500.000",
       "priceOld": "",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 6,
@@ -110,8 +110,8 @@
       "currency": "Rp",
       "price": "1.500.000",
       "priceOld": "2.500.000",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 7,
@@ -128,8 +128,8 @@
       "currency": "Rp",
       "price": "7.000.000",
       "priceOld": "14.500.000",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     },
     {
       "id": 8,
@@ -146,8 +146,8 @@
       "currency": "Rp",
       "price": "500.000",
       "priceOld": "",
-      "shareUrl": "",
-      "likeUrl": ""
+      "shareUrl": "#",
+      "likeUrl": "#"
     }
   ]
 }

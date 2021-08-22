@@ -99,7 +99,8 @@ if (spoilersArray.length > 0) {
             spoilerTitle.nextElementSibling.hidden = true;
           }
         } else {
-          spoilerTitle.setAttribute('tabindex', '-1');
+          if (!spoilerTitle.hasAttribute('data-tab-spoiler'))
+            spoilerTitle.setAttribute('tabindex', '-1');
           // spoilerTitle.setAttribute('aria-expanded', true);
           // spoilerTitle.nextElementSibling.setAttribute('aria-hidden', false);
           spoilerTitle.nextElementSibling.hidden = false;
@@ -115,9 +116,8 @@ if (spoilersArray.length > 0) {
         ? el
         : el.closest('[data-spoiler]');
       const spoilerBlock = spoilerTitle.closest('[data-spoilers]');
-      const oneSpoiler = spoilerBlock.hasAttribute('data-one-spoiler')
-        ? true
-        : false;
+      const oneSpoiler = spoilerBlock.hasAttribute('data-one-spoiler');
+
       if (!spoilerBlock.querySelectorAll('._slide').length) {
         if (oneSpoiler && !spoilerTitle.classList.contains('_active')) {
           hideSpoilersBody(spoilerBlock);

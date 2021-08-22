@@ -2,7 +2,6 @@ const productsToShow = 4;
 const shownProductsIds = [];
 
 getProducts();
-
 function getProducts(btn = null) {
   if (btn) {
     if (btn.disabled) {
@@ -21,7 +20,7 @@ function getProducts(btn = null) {
           btn.removeAttribute('disabled');
         }
         if (shownProductsIds.length + productsToShow >= data.products.length) {
-          loadProducts(data, data.products.length);
+          loadProducts(data, data.products.length - shownProductsIds.length);
           document.querySelector('.products__footer').remove();
         } else {
           loadProducts(data, productsToShow);
@@ -71,13 +70,14 @@ function loadProducts(data, quantity) {
       `
         <article data-pid="${item.id}" class="products__item item-product">
           ${labels}
-          <a href="#" class="item-product__image _ibg">
+          <a tabindex="-1" href="${item.url}" class="item-product__image _ibg">
             <img src="${imagesLocation + item.image}" 
             alt="${item.title}" />
           </a>
           <div class="item-product__body">
             <div class="item-product__content">
-              <h5 class="item-product__title">${item.title}</h5>
+              <a href="${item.url}" class="item-product__title">
+              ${item.title}</a>
               <div class="item-product__text">${item.text}</div>
             </div>
             <div class="item-product__prices">
@@ -118,6 +118,32 @@ function loadProducts(data, quantity) {
         </article>
     `
     );
+
+    const actionsProductBody = productsItems.querySelector(
+      `[data-pid="${item.id}"] .actions-product__body`
+    );
+
+    Array.from(actionsProductBody.children).forEach((el) => {
+      el.addEventListener(
+        'focus',
+        () => {
+          el.closest('.item-product__actions').classList.add(
+            'item-product__actions_active'
+          );
+        },
+        true
+      );
+      el.addEventListener(
+        'blur',
+        () => {
+          el.closest('.item-product__actions').classList.remove(
+            'item-product__actions_active'
+          );
+        },
+        true
+      );
+    });
+
     quantity--;
     return quantity > 0;
   });
