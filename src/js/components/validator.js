@@ -7,13 +7,13 @@ new window.JustValidate('.subscribe__form', {
   },
   messages: {
     email: {
-      required: 'Вы должны ввести email',
-      email: 'Введите корректный email',
+      required: 'You must enter an email',
+      email: 'You must enter a valid email address',
     },
   },
 
   submitHandler: function (form, values, ajax) {
-    console.log('submit');
+    console.log('submited');
     // ajax({
     //   url: 'https://just-validate-api.herokuapp.com/submit',
     //   method: 'POST',

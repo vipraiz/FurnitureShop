@@ -67,9 +67,10 @@ body {
   height: 100%;
 }
 
-// img {
-//   max-width: 100%;
-// }
+img {
+  height: auto;
+  max-width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -295,21 +296,4 @@ button {
   opacity: 1;
   transition: opacity 1s ease-in-out, left 1s ease-in-out, top 1s ease-in-out,
     height 1s ease-in-out, width 1s ease-in-out;
-}
-
-.lg-on body {
-  overflow: hidden;
-}
-
-.lg-components {
-  display: none;
-}
-
-.lg-backdrop.in {
-  opacity: 0.9;
-}
-
-.lg-outer .lg-item:not(.lg-start-end-progress) {
-  background: url("../img/loading.gif") no-repeat scroll center center
-    transparent;
 }

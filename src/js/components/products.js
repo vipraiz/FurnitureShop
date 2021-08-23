@@ -71,8 +71,10 @@ function loadProducts(data, quantity) {
         <article data-pid="${item.id}" class="products__item item-product">
           ${labels}
           <a tabindex="-1" href="${item.url}" class="item-product__image _ibg">
-            <img src="${imagesLocation + item.image}" 
-            alt="${item.title}" />
+            <picture>
+              <source srcset="${imagesLocation + item.image.split('.')[0]}.webp" type="image/webp">
+              <img src="${imagesLocation + item.image}" alt="Bohauss">
+            </picture>
           </a>
           <div class="item-product__body">
             <div class="item-product__content">

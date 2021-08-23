@@ -28,9 +28,11 @@
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.3.0",
+    "gulp-format-html": "^1.2.5",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-rev": "^9.0.0",
     "gulp-rev-delete-original": "^0.2.3",
@@ -40,11 +42,18 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
     "node-w3c-validator": "^2.0.1",
     "stylelint": "^13.9.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.18.0",
+    "through2": "^4.0.2",
+    "webp-converter": "^2.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-webp-css": "^1.1.0"
+  }
 }
