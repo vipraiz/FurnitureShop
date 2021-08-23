@@ -908,10 +908,6 @@
       margin-bottom: 16px;
     }
   }
-
-  // .furniture__row
-  &__row {
-  }
 }
 
 .row-furniture {
@@ -919,26 +915,36 @@
   &_left-top {
     align-items: end;
     justify-content: end;
+    padding-left: 0;
   }
 
   // .row-furniture_left-bottom
   &_left-bottom {
     align-items: start;
     justify-content: end;
+    padding-left: 0;
   }
 
   // .row-furniture_center
   &_center {
     display: block;
   }
+
   // .row-furniture_right-top
   &_right-top {
     align-items: end;
+    padding-right: 0;
   }
 
   // .row-furniture_right-bottom
   &_right-bottom {
     align-items: start;
+    padding-right: 0;
+
+    .row-furniture__item:last-child {
+      width: 258px;
+      height: 196px;
+    }
   }
 
   // .row-furniture__item

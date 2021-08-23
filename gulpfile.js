@@ -269,6 +269,7 @@ const htmlMinify = () => {
     .pipe(
       htmlmin({
         collapseWhitespace: true,
+        removeComments: true,
       })
     )
     .pipe(dest('app'));
